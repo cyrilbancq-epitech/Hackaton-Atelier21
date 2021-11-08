@@ -1,0 +1,49 @@
+$blue: #5CB2F9;
+$white: #FFF;
+
+@font-face {
+    font-family: "Bebas Neue";
+    src: url("/fonts/Bebas Neue/BebasNeue-Regular.ttf");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+  }
+
+.header {
+    font-family: "Bebas Neue";
+}
+
+.header-wrapper {
+    background-color: $blue;
+    color: $white;
+    letter-spacing: 3px;
+    height: 10vh;
+    width: 100%;
+    padding: 0 20px 0 20px;
+    text-transform: uppercase;
+    display: flex;
+}
+
+.header-branding {
+    width: 40%;
+}
+
+.header-links {
+    width: 60%;
+}
+
+.header-nav {
+    height: 100%;
+}
+
+.header-nav-ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav-li {
+    list-style: none;
+}
