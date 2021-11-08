@@ -1,0 +1,35 @@
+$blue : #5CB2F9;
+
+.footer
+{
+    display: flex;
+    color: white;
+    background-color: $blue;
+    height: 5vh;
+    width: 100%;
+}
+
+.footer-wrapper
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 0 20px;
+    width: 100%;
+}
+
+.footer-left
+{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer-right
+{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+
+    svg{margin: 5px;}
+}
