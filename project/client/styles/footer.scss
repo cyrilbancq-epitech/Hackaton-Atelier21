@@ -7,6 +7,10 @@ $blue : #5CB2F9;
     background-color: $blue;
     height: 5vh;
     width: 100%;
+
+    a {
+        color: white;
+    }
 }
 
 .footer-wrapper
@@ -31,5 +35,7 @@ $blue : #5CB2F9;
     display: flex;
     justify-content: flex-end;
 
-    svg{margin: 5px;}
+    svg {
+        margin: 5px;
+    }
 }

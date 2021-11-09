@@ -42,8 +42,13 @@ $white: #FFF;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    a {
+        text-decoration: none;
+    }
 }
 
 .header-nav-li {
     list-style: none;
+    color: $white;
 }

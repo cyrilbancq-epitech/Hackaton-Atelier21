@@ -3,6 +3,11 @@ import Head from 'next/head';
 // IMPORT COMPONENTS
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Slider from '../components/Slider';
+import Search from '../components/Search';
+
+// IMPORT BOOTSTRAP
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Home() {
   return (
@@ -13,6 +18,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
+      <Search />
+      <div className="home-main">
+        <Slider />
+      </div>
       <Footer />
     </div>
   )

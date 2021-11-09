@@ -4,6 +4,10 @@ import '../styles/globals.css';
 import "../styles/index.scss";
 import "../styles/header.scss";
 import "../styles/footer.scss";
+import "../styles/slider.scss";
+import "../styles/admin-login.scss";
+import "../styles/search.scss";
+
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
