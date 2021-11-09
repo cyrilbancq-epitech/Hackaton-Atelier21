@@ -1,14 +1,14 @@
 // IMPORT MYSQL CONNECTION
 const connection = require('../database/index');
-const bcrypt = require('bcrypt');
+// const bcrypt = require('bcrypt');
 
 // HASH PASSWORD STATIC
-const hashPassword = async (password) => {
-    let hashed = await bcrypt.hash(password, 12).then(function(hash){
-        return hash;
-    });
-    return hashed;
-};
+// const hashPassword = async (password) => {
+//     let hashed = await bcrypt.hash(password, 12).then(function(hash){
+//         return hash;
+//     });
+//     return hashed;
+// };
 
 // Create user
 exports.createUser = async (body) => {
