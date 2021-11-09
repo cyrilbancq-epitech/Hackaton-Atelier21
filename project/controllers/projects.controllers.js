@@ -4,7 +4,8 @@ const { getProjects } = require('../queries/projects.queries');
 exports.getProjects = async (req, res, next) => {
     try {
         const projects = await getProjects();
-        if(projects.length > 0) {
+        
+        if(true) {
             res.status(200).json({
                 message: "Successfully got projects",
                 projects: projects
@@ -14,8 +15,8 @@ exports.getProjects = async (req, res, next) => {
                 message: "An error occured. Please retry.",
                 projects: []
             });
-        }
+        };
     } catch (error) {
         res.json({ error: [error.message] });
-    }
-}
+    };
+};

@@ -15,6 +15,7 @@ exports.app = app;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors({ origin: "*", credentials: true }));
+app.use(index);
 
 app.get('/', (req, res) => {
   res.send('Hello World!')
