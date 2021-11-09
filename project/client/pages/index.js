@@ -9,7 +9,17 @@ import Search from '../components/Search';
 // IMPORT BOOTSTRAP
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-export default function Home() {
+export const getStaticProps = async () => {
+  const res = await fetch('http://localhost:8000/api/projects/get');
+  const data = await res.json();
+
+  return {
+      props: {projects: data}
+  }
+}
+
+function Home({ projects }) {
+  console.log(projects);
   return (
     <div className="home">
       <Head>
@@ -18,7 +28,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <Search />
+      <Search projects={projects}/>
       <div className="home-main">
         <Slider />
       </div>
@@ -26,3 +36,5 @@ export default function Home() {
     </div>
   )
 }
+
+export default Home;
