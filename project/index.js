@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-const port = 8080
+const port = 8000;
 
 // DB CONNECT
 require('./database');
@@ -21,7 +21,7 @@ app.get('/', (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
+  console.log(`App listening at http://localhost:${port}`)
 });
 
 module.exports = app;
