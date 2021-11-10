@@ -5,6 +5,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Slider from '../components/Slider';
 import Search from '../components/Search';
+import Timeline from '../components/Timeline';
 
 // IMPORT BOOTSTRAP
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -28,10 +29,11 @@ function Home({ projects }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <Search projects={projects}/>
-      <div className="home-main">
-        <Slider />
-      </div>
+      {/* <Search projects={projects}/> */}
+      {/* <div className="home-main"> */}
+        {/* <Slider /> */}
+        <Timeline />
+      {/* </div> */}
       <Footer />
     </div>
   )
