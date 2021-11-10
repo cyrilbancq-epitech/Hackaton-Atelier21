@@ -5,6 +5,8 @@ import Timeline from '../Timeline/Timeline';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 
+import logo from './logo.png';
+
 // IMPORT BOOTSTRAP
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -30,9 +32,6 @@ function Home() {
         <Header />
         <Timeline projects={projects} />
         <Footer />
-      <div className="logo">
-        <img src="./logo.png" alt="Atelier21"/>
-      </div>
     </div>
   )
 }

@@ -16,15 +16,16 @@ exports.app = app;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors({ origin: "*", credentials: true }));
-app.use(express.static(path.join(__dirname, './admin')));
+app.use(express.static(path.join(__dirname, './build')));
+app.use(express.static(path.join(__dirname, './build-admin')));
 app.use(index);
 
-app.get('/', (req, res) => {
-  res.send('Hello World!')
+app.get('/admin', (req, res) => {
+  res.sendFile(path.join(__dirname, './build-admin/index.html'));
 });
 
-app.get('/admin', (req, res) => {
-  res.sendFile(path.join(__dirname, './admin/index3.html'));
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, './build/index.html'));
 });
 
 app.listen(port, () => {

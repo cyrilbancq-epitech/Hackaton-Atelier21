@@ -18,6 +18,16 @@ $blue: #5CB2F9;
     }
 }
 
+.text-center {
+    z-index: 100;
+    color: black;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+}
+
 #root > div > div.home > div.timeline > div > div:nth-child(1) > div > div > ul:nth-child(2) > li:nth-child(1) {
     background-image: none !important;
 }
