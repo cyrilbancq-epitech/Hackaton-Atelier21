@@ -23,7 +23,7 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 });
 
-app.get('/adminblablabla', (req, res) => {
+app.get('/admin', (req, res) => {
   res.sendFile(path.join(__dirname, './admin/index3.html'));
 });
 

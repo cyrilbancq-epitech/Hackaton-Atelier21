@@ -1,0 +1,17 @@
+.home {
+    display: flex;
+    flex-direction: column;
+}
+
+.home-main {
+    height: auto;
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translate(-50%, 50%);
+    width: 200px;
+    height: 40px;
+}

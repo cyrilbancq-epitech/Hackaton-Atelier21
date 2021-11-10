@@ -18,7 +18,7 @@ export default function Header() {
               </Link>
               <Link href="/team">
                 <a>
-                  <li className="header-nav-li">L'Équipe</li>
+                  <li className="header-nav-li">Équipe</li>
                 </a>
               </Link>
               <Link href="/news">

@@ -17,7 +17,7 @@ const Search = ({ projects }) => {
             </div>
             <div className="search-results">
                 {projects.projects.map((proj) => (
-                    <p>{proj.title}</p>
+                    <p key={proj.id}>{proj.title}</p>
                 ))}
             </div>
         </div>

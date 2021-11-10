@@ -13,6 +13,7 @@ export default function Slider() {
               src="/img1.jpeg"
               width={1048}
               height={500}
+              alt="image1"
             />
             <Carousel.Caption>
               <h3>First slide label</h3>
@@ -25,6 +26,7 @@ export default function Slider() {
               src="/img2.jpeg"
               width={1048}
               height={500}
+              alt="image2"
             />
             <Carousel.Caption>
               <h3>Second slide label</h3>
@@ -37,6 +39,7 @@ export default function Slider() {
               src="/img3.jpeg"
               width={1048}
               height={500}
+              alt="image3"
             />
             <Carousel.Caption>
               <h3>Third slide label</h3>

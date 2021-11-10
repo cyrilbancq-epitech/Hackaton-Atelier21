@@ -35,7 +35,7 @@ function Home({ projects }) {
         <Timeline projects={projects} />
       {/* </div> */}
       <div className="logo">
-        <Image src="/logo.png" width={200} height={40} />
+        <Image src="/logo.png" width={200} height={40} alt="Atelier21"/>
       </div>
       <Footer />
     </div>

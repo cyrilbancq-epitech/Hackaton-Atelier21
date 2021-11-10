@@ -1,0 +1,27 @@
+$blue: #5CB2F9;
+
+.timeline {
+    background-color: #F8F8F8;
+    background: url('./background.jpeg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    padding-top: 10vh;
+}
+.timeline-wrapper {
+    width: 80%;
+    margin: auto;
+    li {
+        padding-top: 5px !important;
+        padding-bottom: 8px !important;
+        color: white;
+    }
+}
+
+#root > div > div.home > div.timeline > div > div:nth-child(1) > div > div > ul:nth-child(2) > li:nth-child(1) {
+    background-image: none !important;
+}
+
+#root > div > div.home > div.timeline > div > div:nth-child(1) > div > div > ul:nth-child(2) > li:nth-child(2) {
+    background-image: none !important;
+}

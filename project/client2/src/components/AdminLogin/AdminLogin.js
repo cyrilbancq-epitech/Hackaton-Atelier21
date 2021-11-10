@@ -1,4 +1,5 @@
-
+import React from 'react';
+import './AdminLogin.scss';
 
 export default function AdminLogin() {
     return (
