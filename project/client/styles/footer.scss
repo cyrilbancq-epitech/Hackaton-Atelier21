@@ -7,6 +7,9 @@ $blue : #5CB2F9;
     background-color: $blue;
     height: 5vh;
     width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 
     a {
         color: white;
@@ -27,6 +30,12 @@ $blue : #5CB2F9;
     width: 50%;
     display: flex;
     justify-content: flex-start;
+    align-items: center;
+
+    p {
+        margin-bottom: 0;
+        font-size: 0.8rem;
+    }
 }
 
 .footer-right

@@ -11,10 +11,14 @@ $white: #FFF;
 
 .header {
     font-family: "Bebas Neue";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: $blue;
 }
 
 .header-wrapper {
-    background-color: $blue;
     color: $white;
     letter-spacing: 3px;
     height: 10vh;

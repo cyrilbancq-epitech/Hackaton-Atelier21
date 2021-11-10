@@ -14,7 +14,7 @@ export default function Footer() {
       <div className="footer">
           <div className="footer-wrapper">
               <div className="footer-left">
-                    <h5 className="footer-title">PALEO ENERGETIQUE 2021 / BY DCB </h5>
+                    <p className="footer-title">PALEO H2O 2021 / BY DCB </p>
               </div>
               <div className="footer-right">
                   <Link href="https://twitter.com/paleoenergie">

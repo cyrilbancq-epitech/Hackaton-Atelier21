@@ -6,3 +6,10 @@
 .home-main {
     height: auto;
 }
+
+.logo {
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translate(-50%, 50%);
+}

@@ -1,5 +1,5 @@
 import Head from 'next/head';
-
+import Image from 'next/image';
 // IMPORT COMPONENTS
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -32,8 +32,11 @@ function Home({ projects }) {
       {/* <Search projects={projects}/> */}
       {/* <div className="home-main"> */}
         {/* <Slider /> */}
-        <Timeline />
+        <Timeline projects={projects} />
       {/* </div> */}
+      <div className="logo">
+        <Image src="/logo.png" width={200} height={40} />
+      </div>
       <Footer />
     </div>
   )
